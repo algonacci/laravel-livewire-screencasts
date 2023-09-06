@@ -20,4 +20,6 @@
     <form action="#" wire:submit.prevent="$set('name', 'FORM')">
         <button>Reset Name</button>
     </form>
+
+    <p>{{ $age }}</p>
 </div>
