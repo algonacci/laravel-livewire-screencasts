@@ -17,7 +17,7 @@
 
     <button wire:click="resetName('Bingo')">Reset Name</button>
 
-    <form action="#" wire:submit.prevent="resetName('Form')">
+    <form action="#" wire:submit.prevent="$set('name', 'FORM')">
         <button>Reset Name</button>
     </form>
 </div>
