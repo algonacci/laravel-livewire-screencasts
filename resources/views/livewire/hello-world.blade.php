@@ -14,4 +14,10 @@
     {{ implode(', ', $greeting) }} {{ strtoupper($name) }} @if ($loud)
         !!!
     @endif
+
+    <button wire:click="resetName('Bingo')">Reset Name</button>
+
+    <form action="#" wire:submit.prevent="resetName('Form')">
+        <button>Reset Name</button>
+    </form>
 </div>
