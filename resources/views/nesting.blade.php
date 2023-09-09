@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    @livewire('hello-world', ['age' => 20])
+    @livewire('say-hi', ['name' => 'test'])
 
-    <a href="{{ route('nesting') }}">Nesting</a>
+    <a href="{{ url('/') }}">Home</a>
 
     @livewireScripts
 </body>

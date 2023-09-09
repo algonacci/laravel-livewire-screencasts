@@ -22,4 +22,11 @@
     </form>
 
     <p>{{ $age }}</p>
+
+    <br><br>
+    <hr>
+
+    @foreach ($names as $name)
+        @livewire('say-hi', ['name' => $name])
+    @endforeach
 </div>
